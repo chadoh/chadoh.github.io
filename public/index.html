@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <title>chadoh</title>
+    <meta name="description" content="A bipedal mammal doing my thinking in an Indo-European language. The website of a human.">
+
+    <meta name="og:title" content="chadoh">
+    <meta name="og:description" content="A bipedal mammal doing my thinking in an Indo-European language. The website of a human.">
+    <meta name="og:image" content="/chadoh.jpeg">
+    <meta name="og:url" content="http://chadoh.com">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@chadoh">
+    <meta name="twitter:title" content="chadoh">
+    <meta name="twitter:description" content="A bipedal mammal doing my thinking in an Indo-European language. The website of a human.">
+    <meta name="twitter:image" content="/chadoh.jpeg">
+
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+        font-size: calc(0.85em + 1vw);
+      }
+      .App {
+        text-align: center;
+      }
+
+      .App-header {
+        background-color: #efefef;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .App-title {
+        height: 25vh;
+        margin: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+      }
+
+      .App-title small {
+        font-size: 0.35em;
+        display: block;
+      }
+
+      .App-logo-wrap {
+        height: 50vh;
+        width: 50vh;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      }
+
+      .App-logo {
+        border-radius: 50%;
+        margin-left: -35%;
+        width: 100%;
+      }
+
+      .App-logo-wrap nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        text-align: left;
+        padding-left: 1em;
+      }
+
+      .App-logo-wrap a {
+        display: block;
+        white-space: nowrap;
+      }
+
+      .App-logo-wrap a:nth-child(1) {
+        margin-left: -1.6em;
+        -webkit-transform: rotate(-30deg);
+            -ms-transform: rotate(-30deg);
+                transform: rotate(-30deg);
+      }
+
+      .App-logo-wrap a:nth-child(2) {
+        margin-left: -0.4em;
+        -webkit-transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+      }
+
+      .App-logo-wrap a:nth-child(3) {
+      }
+
+      .App-logo-wrap a:nth-child(4) {
+        margin-left: -0.4em;
+        -webkit-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+                transform: rotate(15deg);
+      }
+
+      .App-logo-wrap a:nth-child(5) {
+        margin-left: -1.6em;
+        -webkit-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+                transform: rotate(30deg);
+      }
+
+      .App-intro {
+        font-size: 1.2em;
+        height: 25vh;
+        margin: 0;
+        padding: 0 5vw;
+        max-width: 18em;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+      }
+      .Calendar {
+        height: 100vh;
+        margin-top: 100vh;
+        background-color: white;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="App">
+        <div class="App-header">
+          <h1 class="App-title">
+            <span>
+              <span id="title" onMouseOver="changeHeader()" onClick="changeHeader()">
+                chadoh
+              </span>
+              <small>the website of a human</small>
+            </span>
+          </h1>
+          <div class="App-logo-wrap">
+            <img src="img/chadoh.jpeg" class="App-logo" alt="logo">
+            <nav>
+              <a href="https://medium.com/@chadoh">I write!</a>
+              <a href="https://twitter.com/chadoh">I tweet!</a>
+              <a href="http://ilike.earthclouds.best/">I speak!</a>
+              <a href="https://www.instagram.com/_chadoh_/">I photo!</a>
+              <a href="http://github.com/chadoh">I code!</a>
+            </nav>
+          </div>
+          <p class="App-intro">Hello, friend!<br>Scroll down?</p>
+        </div>
+        <div class="Calendar">
+          <iframe id="entire-life-calendar" src="https://entire.life/chadoh?embed" width="100%" height="1000" frameborder="0" style="border: 0px; background-image: url(&quot;img/loading.svg&quot;); background-position: 50% 2em; background-size: 150px; background-repeat: no-repeat;"></iframe>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+var punctuation = ['. ', '! ', '? ', '']
+function sample(arr) {
+  return arr[Math.floor(Math.random() * arr.length)]
+}
+function randomTitle() {
+  return 'chad' + sample(punctuation) + 'oh' + sample(punctuation)
+}
+function changeHeader() {
+  var title = randomTitle();
+  document.getElementsByTagName('title')[0].innerText = title;
+  document.getElementById('title').innerText = title;
+}
+changeHeader()
+
+
+function adjustHeight(message) {
+  var origin = message.origin;
+  var event = message.data.event;
+  var height = message.data.height;
+  if (origin === 'https://entire.life' && event === 'ENTIRELIFE_ROUTE_CHANGE') {
+    var iframe = document.querySelector('#entire-life-calendar')
+    iframe.height = '' + (height + 5)
+  }
+}
+window.addEventListener('message', adjustHeight, false)
+
+    </script>
+  </body>
+</html>
