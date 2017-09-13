@@ -24,7 +24,7 @@
       body {
         background-color: #efefef;
         margin: 0;
-        padding: 0 1.5em 1.5em;
+        padding: 0 1.5em;
         font-family: monospace;
         font-size: calc(0.85em + 1vw);
       }
@@ -41,15 +41,36 @@
         padding: 0 0.25em;
         vertical-align: middle;
       }
-      .Talks {
-        height: 100vh;
+      article {
         background-color: black;
+        color: #efefef;
+        height: 50vh;
+        display: flex;
+        padding-left: 1.5em;
+        padding-top: 1.5em;
+        flex-flow: row wrap;
+        margin-bottom: 1.5em;
+      }
+      section {
+        flex: 1 1 10em;
+        padding-bottom: 1.5em;
+        padding-right: 1.5em;
       }
     </style>
   </head>
   <body>
     <h1><a href=".">chadoh</a><img src="img/chadoh.jpeg" alt="">talks</h1>
-    <div class="Talks">
-    </div>
+    <article aria-label="Earth Clouds Are The Best Clouds">
+      <section aria-label="The Slides">
+      </section>
+      <section aria-label="The Video">
+      </section>
+    </article>
+    <article aria-label="Online/Offline Equivalence: What our interplanetary tomorrow can teach us about building apps today">
+      <section aria-label="The Video">
+      </section>
+      <section aria-label="The Slides">
+      </section>
+    </article>
   </body>
 </html>
