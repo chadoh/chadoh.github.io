@@ -44,7 +44,6 @@
       article {
         background-color: black;
         color: #efefef;
-        height: 50vh;
         display: flex;
         padding-left: 1.5em;
         padding-top: 1.5em;
@@ -52,9 +51,23 @@
         margin-bottom: 1.5em;
       }
       section {
-        flex: 1 1 10em;
+        flex: 1 1 17em;
         padding-bottom: 1.5em;
         padding-right: 1.5em;
+      }
+      div {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+      }
+      div iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     </style>
   </head>
@@ -62,14 +75,26 @@
     <h1><a href=".">chadoh</a><img src="img/chadoh.jpeg" alt="">talks</h1>
     <article aria-label="Earth Clouds Are The Best Clouds">
       <section aria-label="The Slides">
+        <div>
+          <iframe src="https://chadoh.com/earth-clouds-are-the-best-clouds/" width="100%" frameborder="0" style="border: 0px"></iframe>
+        </div>
       </section>
       <section aria-label="The Video">
+        <div>
+          <iframe src="https://www.youtube.com/embed/wVpQGqTUOcM" frameborder='0' allowfullscreen></iframe>
+        </div>
       </section>
     </article>
     <article aria-label="Online/Offline Equivalence: What our interplanetary tomorrow can teach us about building apps today">
       <section aria-label="The Video">
+        <div>
+          <iframe src="https://www.youtube.com/embed/wxDn1XMVwNE" frameborder='0' allowfullscreen></iframe>
+        </div>
       </section>
       <section aria-label="The Slides">
+        <div>
+          <iframe src="https://chadoh.com/online-offline-equivalence/" width="100%" frameborder="0" style="border: 0px"></iframe>
+        </div>
       </section>
     </article>
   </body>
