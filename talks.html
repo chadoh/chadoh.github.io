@@ -26,13 +26,12 @@
         margin: 0;
         padding: 0 1.5em;
         font-family: monospace;
-        font-size: calc(0.85em + 1vw);
+        font-size: calc(0.85em + 0.5vw);
       }
       h1 {
         text-align: center;
         height: 3em;
         margin: 0;
-        font-size: 1.5em;
       }
       h1 img {
         border-radius: 50%;
@@ -50,10 +49,16 @@
         flex-flow: row wrap;
         margin-bottom: 1.5em;
       }
+      article a {
+        color: white;
+      }
       section {
-        flex: 1 1 17em;
+        flex: 1 1 16em;
         padding-bottom: 1.5em;
         padding-right: 1.5em;
+      }
+      h2 {
+        margin-top: 0;
       }
       div {
         position: relative;
@@ -69,31 +74,36 @@
         width: 100%;
         height: 100%;
       }
+      p:last-child {
+        margin-bottom: 0;
+      }
     </style>
   </head>
   <body>
     <h1><a href=".">chadoh</a><img src="img/chadoh.jpeg" alt="">talks</h1>
-    <article aria-label="Earth Clouds Are The Best Clouds">
-      <section aria-label="The Slides">
-        <div>
-          <iframe src="https://chadoh.com/earth-clouds-are-the-best-clouds/" width="100%" frameborder="0" style="border: 0px"></iframe>
-        </div>
+    <article>
+      <section>
+        <h2>Earth Clouds Are The Best Clouds</h2>
+        <p>🏷 #spokenword #poetry #space #earth #celebration</p>
+        <p>⏱ 5 minutes</p>
+        <p>📽 <a href="http://chadoh.com/earth-clouds-are-the-best-clouds/" target="_blank">slides ↗</a></p>
       </section>
-      <section aria-label="The Video">
+      <section aria-label="Video">
         <div>
           <iframe src="https://www.youtube.com/embed/wVpQGqTUOcM" frameborder='0' allowfullscreen></iframe>
         </div>
       </section>
     </article>
-    <article aria-label="Online/Offline Equivalence: What our interplanetary tomorrow can teach us about building apps today">
-      <section aria-label="The Video">
+    <article style="flex-direction: row-reverse">
+      <section>
+        <h2>Online/Offline Equivalence: What our interplanetary tomorrow can teach us about building apps today</h2>
+        <p>🏷 #webdevelopment #offlinefirst #distributedweb</p>
+        <p>⏱ 30 minutes</p>
+        <p>📽 <a href="http://chadoh.com/online-offline-equivalence/" target="_blank">slides ↗</a></p>
+      </section>
+      <section aria-label="Video">
         <div>
           <iframe src="https://www.youtube.com/embed/wxDn1XMVwNE" frameborder='0' allowfullscreen></iframe>
-        </div>
-      </section>
-      <section aria-label="The Slides">
-        <div>
-          <iframe src="https://chadoh.com/online-offline-equivalence/" width="100%" frameborder="0" style="border: 0px"></iframe>
         </div>
       </section>
     </article>
